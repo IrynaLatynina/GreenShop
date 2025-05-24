@@ -6,60 +6,39 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GreenShop</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div style="max-width: 500px; border: solid 1px silver; margin: auto; padding: 52px 100px 50px; box-sizing: border-box; border-bottom: solid 10px #46a358">
-    <h1 style="text-align: center;
-font-weight: 500;
-font-size: 20px;
-line-height: 80%;
-color: #3d3d3d; margin-bottom: 40px;">Login I <span style="color: #46a358;"> Register </span>
+<div class="container align_center">
+    <h1 class="text_center">
+        Login I <span class="green_color"> Register </span>
     </h1>
-    <p style="font-weight: 400;
-font-size: 13px;
-line-height: 123%;
-color: #3d3d3d;margin-bottom: 14px;">
+    <p class="registration_form">
         Enter your email and password to register.
     </p>
     <form action="" method="post" name="login">
         <input type="text" name="username" placeholder="Username"
-               style="width: 100%; border: 1px solid #eaeaea; border-radius: 5px; padding: 12px 14px; margin-bottom: 16px">
+               class="form_input form_input_marginB_16">
         <input type="email" name="enterYourEmailAddress" placeholder="Enter your email address"
-               style="width: 100%; border: 1px solid #eaeaea; border-radius: 5px; padding: 12px 14px; margin-bottom: 16px">
+               class="form_input form_input_marginB_16">
         <input type="password" name="password" placeholder="Password"
-               style="width: 100%; border: 1px solid #eaeaea; border-radius: 5px; padding: 12px 14px; margin-bottom: 16px">
+               class="form_input form_input_marginB_16">
         <input type="password" name="confirmPassword" placeholder="Confirm Password"
-               style="width: 100%; border: 1px solid #eaeaea; border-radius: 5px; padding: 12px 14px; margin-bottom: 41px">
+               class="form_input form_input_marginB_38">
 
-        <button type="submit" style="width: 100%; text-align: center; border: 1px solid #eaeaea; border-radius: 5px; padding: 16px 119px; margin-bottom: 36px; background-color: #46a358; font-weight: 700;
-font-size: 16px;
-line-height: 100%;
-color: #fff;"> Register
+        <button class="submit_button text_center"> Register
         </button>
     </form>
 
-    <p style="font-weight: 400;
-font-size: 13px;
-line-height: 123%;
-color: #3d3d3d;margin-bottom: 27px;text-align: center;">
+    <p class="register_options">
         Or register with
     </p>
-    <a href="#" style=" width: 100%; display: flex; justify-content: center; align-items: center; gap: 9px; border: 1px solid #eaeaea; margin-bottom: 15px;
-border-radius: 5px; font-weight: 500;
-font-size: 13px;
-line-height: 123%;
-text-align: center;
-color: #727272; padding: 10px 0; text-decoration: none;">
+    <a href="#" class="google_link d-flex justify_content align_center text_center">
         <img src="images/google.svg" alt="google">
         Continue with Google
     </a>
 
-    <a href="#" style=" width: 100%; display: flex; justify-content: center; align-items: center; gap: 9px; border: 1px solid #eaeaea; margin-bottom: 40px;
-border-radius: 5px; font-weight: 500;
-font-size: 13px;
-line-height: 123%;
-text-align: center;
-color: #727272; padding: 10px 0; text-decoration: none;">
+    <a href="#" class="facebook_link d-flex justify_content align_center text_center">
         <img src="images/facebook.svg" alt="facebook">
         Continue with Facebook
     </a>
