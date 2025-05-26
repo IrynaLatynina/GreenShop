@@ -130,8 +130,6 @@ header .nav_container {
 }
 
 .login_link {
-    display: inline-flex;
-    width: 100%;
     line-height: 100%;
     background-color: #46A358;
     font-weight: 500;
@@ -141,10 +139,10 @@ header .nav_container {
     gap: 4px;
     align-items: center;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
     border-radius: 6px;
+    text-decoration: none;
 }
-
 .navigation {
     font-weight: 400;
     font-size: 16px;
@@ -205,4 +203,5 @@ main section p{
 }
 header nav ul {
     list-style: none;
+    text-decoration: none;
 }
