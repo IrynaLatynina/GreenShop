@@ -109,6 +109,7 @@
     text-align: center;
     justify-content: center;
 }
+
 .nav_container {
     max-width: 1200px;
     margin: auto;
@@ -143,13 +144,15 @@ header .nav_container {
     text-decoration: none;
     display: flex;
 }
+
 .navigation {
     font-weight: 400;
     font-size: 16px;
     color: #3d3d3d;
     text-decoration: none;
 }
-.main_container{
+
+.main_container {
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -164,9 +167,11 @@ header .nav_container {
     justify-content: space-between;
     align-items: center;
 }
+
 .main_text_container {
     width: 100%;
 }
+
 main h3 {
     font-weight: 500;
     font-size: 14px;
@@ -175,7 +180,8 @@ main h3 {
     text-transform: uppercase;
     color: #3d3d3d;
 }
-main h1{
+
+main h1 {
     font-weight: 900;
     font-size: 70px;
     line-height: 100%;
@@ -184,13 +190,15 @@ main h1{
     text-align: left;
     margin-bottom: 7px;
 }
-main section p{
+
+main section p {
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
     color: #727272;
     margin-bottom: 44px;
 }
+
 .shopping_link {
     background-color: #46A358;
     font-weight: 700;
@@ -203,6 +211,76 @@ main section p{
     margin-bottom: 85px;
     text-decoration: none;
 }
+
 header nav ul {
     list-style: none;
+}
+
+.main_products_container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.category_list {
+    max-width: 100%;
+    background: #fbfbfb;
+}
+
+.category_list ul {
+    padding-left: 18px;
+    list-style: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 267%;
+    color: #3d3d3d;
+}
+
+.category {
+    max-width: 100%;
+    display: block;
+    background: #fbfbfb;
+}
+
+main section h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    margin-bottom: 7px;
+    padding-top: 3px;
+}
+
+.imageSuperSale {
+    padding-top: 378px;
+}
+
+.product_items {
+    max-width: 100%;
+    background: #ffffff;
+}
+
+.product_items_nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 385px;
+
+}
+
+.product_items ul {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+.links_to_products {
+    display: flex;
+    flex-wrap: wrap;
 }
