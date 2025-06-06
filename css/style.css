@@ -139,11 +139,9 @@ header .nav_container {
     color: #fff;
     padding: 7px 17px;
     gap: 4px;
-    align-items: center;
-
-    justify-content: center;
     border-radius: 6px;
     text-decoration: none;
+    display: flex;
 }
 .navigation {
     font-weight: 400;
