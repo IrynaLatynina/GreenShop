@@ -267,8 +267,6 @@ main section h4 {
 .product_items_nav {
     display: flex;
     justify-content: space-between;
-    gap: 385px;
-
 }
 
 .product_items ul {
@@ -280,7 +278,33 @@ main section h4 {
     display: flex;
     gap: 40px;
 }
+
 .links_to_products {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+}
+
+.links_to_products a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3d3d3d;
+    text-align: center;
+
+}
+.paging ul {
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.number_box {
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
