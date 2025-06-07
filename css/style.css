@@ -232,18 +232,22 @@ header nav ul {
 }
 
 .category_list ul {
-    padding-left: 18px;
     list-style: none;
+    padding-left: 18px;
+}
+.category_list ul a{
     font-weight: 400;
     font-size: 15px;
     line-height: 267%;
     color: #3d3d3d;
+    text-decoration: none;
 }
 
 .category {
     max-width: 100%;
     display: block;
     background: #fbfbfb;
+    text-decoration: none;
 }
 
 main section h4 {
@@ -262,41 +266,58 @@ main section h4 {
 .product_items {
     max-width: 100%;
     background: #ffffff;
-}
 
-.product_items_nav {
+}
+.product_items_nav{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
-
-.product_items ul {
+.product_items_nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+.product_items_nav p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.product_items ul a{
     font-weight: 400;
     font-size: 15px;
     line-height: 107%;
     color: #3d3d3d;
-    list-style: none;
-    display: flex;
-    gap: 40px;
+    text-decoration: none;
 }
 
 .links_to_products {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-}
 
+   }
 .links_to_products a {
     text-decoration: none;
+    }
+
+.links_to_products p {
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
     color: #3d3d3d;
     text-align: center;
-
+    gap: 6px;
 }
-.paging ul {
+.paging{
     justify-content: flex-end;
     gap: 10px;
+    display: flex;
+}
+.paging ul {
+    list-style: none;
+    display: flex;
 }
 
 .number_box {
@@ -305,6 +326,32 @@ main section h4 {
     width: 35px;
     height: 35px;
     display: flex;
-    align-items: center;
+    padding: 10px 0;
+    margin: 5px;
     text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    box-sizing: border-box;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+.number_box img {
+    max-width: 100%;
+    max-height: 100%;
+        }
+.number_box:hover {
+    background-color: #46A358;
+}
+.product_images {
+    margin-bottom: 31px;
+}
+.price_style {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #46a358;
+    margin-left: 6px;
 }
