@@ -249,6 +249,8 @@ header nav ul {
     background: #fbfbfb;
     text-decoration: none;
 }
+.category:hover {
+    color: green;}
 
 main section h4 {
     font-weight: 700;
@@ -277,6 +279,9 @@ main section h4 {
     display: flex;
     list-style: none;
     gap: 40px;
+}
+.product_items_nav ul li a:hover {
+    color: #46A358;
 }
 .product_items_nav p {
     margin: 0;
@@ -353,5 +358,5 @@ main section h4 {
     font-size: 18px;
     line-height: 89%;
     color: #46a358;
-    margin-left: 6px;
+    margin-left: 10px;
 }
