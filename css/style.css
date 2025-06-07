@@ -224,6 +224,7 @@ header nav ul {
     justify-content: space-between;
     padding-left: 40px;
     padding-top: 30px;
+    gap: 40px;
 }
 
 .category_list {
