@@ -331,8 +331,7 @@ main section h4 {
 }
 
 .product_items {
-    max-width: 100%;
-    background: #ffffff;
+   background: #ffffff;
 
 }
 .product_items_nav{
@@ -372,17 +371,25 @@ main section h4 {
    }
 .links_to_products a {
     text-decoration: none;
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 76px;
     }
 
-.links_to_products p {
+.product_images {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+}
+.product_name {
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
     color: #3d3d3d;
-    text-align: center;
-    gap: 6px;
+    text-align: left;
     font-family: 'cera_proregular',serif;
 }
+
 .paging{
     justify-content: flex-end;
     gap: 10px;
@@ -430,4 +437,5 @@ main section h4 {
     color: #46a358;
     margin-left: 10px;
     font-family: 'cera_probold',serif;
+    text-align: left;
 }
