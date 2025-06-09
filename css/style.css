@@ -442,6 +442,7 @@ main section h4 {
         }
 .number_box:hover {
     background-color: #46A358;
+    color: #fbfbfb;
 }
 .product_images {
     margin-bottom: 31px;
