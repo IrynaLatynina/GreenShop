@@ -202,7 +202,7 @@ header .nav_container {
 }
 
 .navigation:hover{
-    background-color: #46A358;
+    color: green;
 }
 .main_container {
     max-width: 1200px;
