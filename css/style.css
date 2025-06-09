@@ -201,6 +201,9 @@ header .nav_container {
     font-family: 'cera_proregular',serif;
 }
 
+.navigation:hover{
+    background-color: #46A358;
+}
 .main_container {
     max-width: 1200px;
     margin: auto;
@@ -435,7 +438,8 @@ main section h4 {
     font-size: 18px;
     line-height: 89%;
     color: #46a358;
-    margin-left: 10px;
+    padding-top: 4px;
     font-family: 'cera_probold',serif;
     text-align: left;
+
 }
