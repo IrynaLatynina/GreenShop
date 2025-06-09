@@ -173,6 +173,7 @@ header {
 header nav ul {
     display: flex;
     gap: 50px;
+    margin-bottom: 20px;
 }
 
 header .nav_container {
@@ -190,6 +191,7 @@ header .nav_container {
     border-radius: 6px;
     text-decoration: none;
     display: flex;
+    margin-bottom: 20px;
     font-family: 'cera_proregular', serif;
 }
 .logo_image{
@@ -284,7 +286,6 @@ header nav ul {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding-left: 40px;
     padding-top: 30px;
     gap: 40px;
 }
