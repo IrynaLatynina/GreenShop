@@ -192,7 +192,9 @@ header .nav_container {
     display: flex;
     font-family: 'cera_proregular', serif;
 }
-
+.logo_image{
+    margin-bottom: 17px;
+}
 .navigation {
     font-weight: 400;
     font-size: 16px;
@@ -202,7 +204,10 @@ header .nav_container {
 }
 
 .navigation:hover{
-    color: green;
+    font-weight: 700;
+    font-size: 16px;
+    color: #3d3d3d;
+
 }
 .main_container {
     max-width: 1200px;
@@ -315,7 +320,10 @@ header nav ul {
     text-decoration: none;
 }
 .category:hover {
-    color: green;}
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 267%;
+    color: #46a358;}
 
 main section h4 {
     font-weight: 700;
@@ -350,7 +358,10 @@ main section h4 {
 }
 
 .product_items_nav ul li a:hover {
-    color: #46A358;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 107%;
+    color: #46a358;
 }
 .product_items_nav p {
     margin: 0;
