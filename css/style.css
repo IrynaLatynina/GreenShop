@@ -350,6 +350,7 @@ main section h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 31px;
 }
 .product_items_nav ul {
     display: flex;
@@ -422,7 +423,6 @@ main section h4 {
     height: 35px;
     display: flex;
     padding: 10px 0;
-    margin: 5px;
     text-align: center;
     font-weight: 300;
     font-size: 18px;
@@ -433,6 +433,7 @@ main section h4 {
     align-items: flex-end;
     justify-content: center;
     font-family: 'cera_proregular',serif;
+    margin-bottom: 94px;
 }
 .number_box img {
     max-width: 100%;
