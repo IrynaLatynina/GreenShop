@@ -418,6 +418,37 @@ main section h4 {
 .product_card_1{
     max-width: 258px;
     position: relative;
+
+}
+.product_card_1 ul li:first-child a:after {
+    display: block;
+    content: '';
+    background-image: url("../images/shopping_basket.svg");
+    width: 20px;
+    height: 20px;
+}
+.product_card_1 ul li a:after {
+    display: block;
+    content: '';
+    background-image: url("../images/heart.svg");
+    width: 20px;
+    height: 20px;
+}
+.product_card_1 ul li:last-of-type a:after {
+    display: block;
+    content: '';
+    background-image: url("../images/search_icon.svg");
+    width: 20px;
+    height: 20px;
+}
+.product_card_1 ul li:first-child a:hover:after {
+    background-image: url("../images/shopping_basket_hover.svg");
+}
+.product_card_1 ul li a:hover:after {
+    background-image: url("../images/heart_hover.svg");
+}
+.product_card_1 ul li:last-of-type a:after {
+    background-image: url("../images/search_icon_hover.svg");
 }
 .product_card_1 ul li{
     position: absolute;
@@ -427,6 +458,9 @@ main section h4 {
     gap:10px;
     bottom: 65px;
     left:0;
+}
+.product_card_1 ul li:hover{
+fill:#46A358;
 }
 .product_images {
     max-width: 100%;
