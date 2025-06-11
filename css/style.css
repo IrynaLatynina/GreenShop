@@ -155,7 +155,7 @@
 .nav_container {
     max-width: 1200px;
     margin: auto;
-    border-bottom:0.30px solid rgba(70, 163, 88, 0.5);
+    border-bottom: 0.30px solid rgba(70, 163, 88, 0.5);
     /*align-items: center;*/
     text-decoration: none;
 }
@@ -196,8 +196,9 @@ header .nav_container {
     text-decoration: none;
     font-family: 'cera_proregular', serif;
 }
-header nav ul li:after{
-content:"";
+
+header nav ul li:after {
+    content: "";
     display: block;
     width: 0;
     height: 3px;
@@ -205,9 +206,11 @@ content:"";
     margin-top: 32px;
     transition: 0.4s;
 }
-header nav ul li:hover::after{
+
+header nav ul li:hover::after {
     width: 100%;
 }
+
 .navigation:hover {
     font-weight: 700;
     font-size: 16px;
@@ -368,8 +371,9 @@ main section h4 {
     gap: 40px;
     font-family: 'cera_proregular', serif;
 }
-.product_items_nav ul li:after{
-    content:"";
+
+.product_items_nav ul li:after {
+    content: "";
     display: block;
     width: 0;
     height: 3px;
@@ -377,9 +381,11 @@ main section h4 {
     margin-top: 7px;
     transition: 0.4s;
 }
-.product_items_nav ul li:hover::after{
+
+.product_items_nav ul li:hover::after {
     width: 100%;
 }
+
 .product_items_nav ul li a:hover {
     font-weight: 700;
     font-size: 15px;
@@ -415,11 +421,13 @@ main section h4 {
     display: flex;
     margin-bottom: 76px;
 }
-.product_card_1{
+
+.product_card_1 {
     max-width: 258px;
     position: relative;
-
+    overflow: hidden;
 }
+
 .product_card_1 ul li:first-child a:after {
     display: block;
     content: '';
@@ -427,6 +435,7 @@ main section h4 {
     width: 20px;
     height: 20px;
 }
+
 .product_card_1 ul li a:after {
     display: block;
     content: '';
@@ -434,6 +443,7 @@ main section h4 {
     width: 20px;
     height: 20px;
 }
+
 .product_card_1 ul li:last-of-type a:after {
     display: block;
     content: '';
@@ -441,28 +451,35 @@ main section h4 {
     width: 20px;
     height: 20px;
 }
+
 .product_card_1 ul li:first-child a:hover:after {
     background-image: url("../images/shopping_basket_hover.svg");
 }
+
 .product_card_1 ul li a:hover:after {
     background-image: url("../images/heart_hover.svg");
 }
+
 .product_card_1 ul li:last-of-type a:hover:after {
     background-image: url("../images/search_icon_hover.svg");
 }
+
 .product_card_1 ul {
     position: absolute;
     width: 100%;
     display: flex;
     justify-content: center;
-    gap:10px;
-    bottom: 65px;
-    left:0;
+    gap: 10px;
+    left: 0;
     list-style: none;
+    bottom: -65px;
+    transition: 0.4s;
 }
-.product_card_1 ul li:hover{
-fill:#46A358;
+
+.product_card_1:hover ul {
+    bottom: 65px;
 }
+
 .product_images {
     max-width: 100%;
     height: auto;
