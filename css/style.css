@@ -447,10 +447,10 @@ main section h4 {
 .product_card_1 ul li a:hover:after {
     background-image: url("../images/heart_hover.svg");
 }
-.product_card_1 ul li:last-of-type a:after {
+.product_card_1 ul li:last-of-type a:hover:after {
     background-image: url("../images/search_icon_hover.svg");
 }
-.product_card_1 ul li{
+.product_card_1 ul {
     position: absolute;
     width: 100%;
     display: flex;
@@ -458,6 +458,7 @@ main section h4 {
     gap:10px;
     bottom: 65px;
     left:0;
+    list-style: none;
 }
 .product_card_1 ul li:hover{
 fill:#46A358;
