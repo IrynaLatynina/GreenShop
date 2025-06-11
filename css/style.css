@@ -415,7 +415,19 @@ main section h4 {
     display: flex;
     margin-bottom: 76px;
 }
-
+.product_card_1{
+    max-width: 258px;
+    position: relative;
+}
+.product_card_1 ul li{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    bottom: 65px;
+    left:0;
+}
 .product_images {
     max-width: 100%;
     height: auto;
@@ -441,7 +453,6 @@ main section h4 {
     list-style: none;
     display: flex;
     gap: 10px;
-
 }
 
 .paging ul li:last-of-type a:after {
