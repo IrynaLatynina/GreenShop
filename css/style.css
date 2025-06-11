@@ -155,8 +155,8 @@
 .nav_container {
     max-width: 1200px;
     margin: auto;
-    border-bottom: 0.30px solid rgba(70, 163, 88, 0.5);
-    align-items: center;
+    border-bottom:0.30px solid rgba(70, 163, 88, 0.5);
+    /*align-items: center;*/
     text-decoration: none;
 }
 
@@ -168,7 +168,6 @@ header {
 header nav ul {
     display: flex;
     gap: 50px;
-    margin-bottom: 20px;
 }
 
 header .nav_container {
@@ -190,10 +189,6 @@ header .nav_container {
     font-family: 'cera_proregular', serif;
 }
 
-.logo_image {
-    margin-bottom: 17px;
-}
-
 .navigation {
     font-weight: 400;
     font-size: 16px;
@@ -201,7 +196,18 @@ header .nav_container {
     text-decoration: none;
     font-family: 'cera_proregular', serif;
 }
-
+header nav ul li:after{
+content:"";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #46A358;
+    margin-top: 32px;
+    transition: 0.4s;
+}
+header nav ul li:hover::after{
+    width: 100%;
+}
 .navigation:hover {
     font-weight: 700;
     font-size: 16px;
@@ -362,7 +368,18 @@ main section h4 {
     gap: 40px;
     font-family: 'cera_proregular', serif;
 }
-
+.product_items_nav ul li:after{
+    content:"";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #46A358;
+    margin-top: 7px;
+    transition: 0.4s;
+}
+.product_items_nav ul li:hover::after{
+    width: 100%;
+}
 .product_items_nav ul li a:hover {
     font-weight: 700;
     font-size: 15px;
@@ -458,18 +475,10 @@ main section h4 {
 
 }
 
-.number_box img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.number_box svg:hover {
-    stroke: white;
-}
-
 .number_box:hover {
     background-color: #46A358;
     color: #fbfbfb;
+    font-family: 'cera_probold', serif;
 }
 
 .product_images {
