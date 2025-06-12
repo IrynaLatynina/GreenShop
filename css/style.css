@@ -156,7 +156,6 @@
     max-width: 1200px;
     margin: auto;
     border-bottom: 0.30px solid rgba(70, 163, 88, 0.5);
-    /*align-items: center;*/
     text-decoration: none;
 }
 
@@ -412,6 +411,7 @@ main section h4 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 90px;
 
 }
 
@@ -424,8 +424,14 @@ main section h4 {
 
 .product_card {
     max-width: 258px;
+    height: 350px;
     position: relative;
     overflow: hidden;
+}
+.product_card a:hover{
+    border-top: #46A358;
+    height: 1px;
+    border-bottom: solid 1px #46a358;
 }
 
 .product_card ul li:first-child a:after {
@@ -440,6 +446,7 @@ main section h4 {
     display: block;
     content: '';
     background-image: url("../images/heart.svg");
+    background-color: rgba(246, 236, 233, 0.43);
     width: 20px;
     height: 20px;
 }
