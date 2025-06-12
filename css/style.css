@@ -293,6 +293,7 @@ header nav ul {
     align-items: flex-start;
     justify-content: space-between;
     padding-top: 30px;
+    padding-bottom: 30px;
     gap: 40px;
 }
 
@@ -584,4 +585,139 @@ main section h4 {
     font-family: 'cera_proregular', serif;
     text-align: left;
     text-decoration: line-through;
+}
+.main_hot_products_container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 40px;
+
+}
+.main_hot_products_container h3 {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 133%;
+    text-transform: uppercase;
+    text-align: right;
+    color: #3d3d3d;
+    font-family: 'cera_probold', serif;
+    margin-bottom: 8px;}
+
+.main_hot_products_container p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    text-align: right;
+    color: #727272;
+    font-family: 'cera_proregular', serif;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+.hot_product_1{
+    max-width: 586px;
+    position: relative;
+    background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 138px;
+}
+
+.container_for_text{
+     display: inline-block;
+     padding: 37px 35px;
+ }
+.image_container{
+    max-width: 100%;
+}
+.hot_product_2 {
+    max-width: 586px;
+    position: relative;
+    background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 138px;
+}
+
+.find_more_button {
+    line-height: 100%;
+    background-color: #46A358;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    padding: 11px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-family: 'cera_proregular', serif;
+    text-align: center;
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 2px;
+}
+.image_container image {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    left: 0;
+    list-style: none;
+    bottom: 25px;
+}
+
+.text_container p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.text_container h3{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 53%;
+    text-align: center;
+    color: #3d3d3d;
+    font-family: 'cera_probold', serif;
+    margin-bottom: 15px;
+}
+.product_items2 a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    color: #3d3d3d;
+    font-family: 'cera_probold', serif;
+
+}
+.product_items2 a:hover{
+    color: green;
+}
+
+.product_items2 h5 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    color: #46a358;
+    font-family: 'cera_proregular', serif;
+    text-align: left;
+
+}
+.product_items2 h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #3d3d3d;
+    font-family: 'cera_proregular', serif;
+    text-align: left;
+}
+.product_items2 p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #727272;
+    font-family: 'cera_proregular', serif;
+    text-align: left;
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 2px;
 }
