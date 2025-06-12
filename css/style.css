@@ -428,10 +428,8 @@ main section h4 {
     position: relative;
     overflow: hidden;
 }
-.product_card a:hover{
-    border-top: #46A358;
-    height: 1px;
-    border-bottom: solid 1px #46a358;
+.product_card:hover{
+    border-top: solid 1px #46a358;
 }
 
 .product_card ul li:first-child a:after {
