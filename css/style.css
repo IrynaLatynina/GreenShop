@@ -422,13 +422,13 @@ main section h4 {
     margin-bottom: 22px;
 }
 
-.product_card_1 {
+.product_card {
     max-width: 258px;
     position: relative;
     overflow: hidden;
 }
 
-.product_card_1 ul li:first-child a:after {
+.product_card ul li:first-child a:after {
     display: block;
     content: '';
     background-image: url("../images/shopping_basket.svg");
@@ -436,7 +436,7 @@ main section h4 {
     height: 20px;
 }
 
-.product_card_1 ul li a:after {
+.product_card ul li a:after {
     display: block;
     content: '';
     background-image: url("../images/heart.svg");
@@ -444,7 +444,7 @@ main section h4 {
     height: 20px;
 }
 
-.product_card_1 ul li:last-of-type a:after {
+.product_card ul li:last-of-type a:after {
     display: block;
     content: '';
     background-image: url("../images/search_icon.svg");
@@ -452,19 +452,19 @@ main section h4 {
     height: 20px;
 }
 
-.product_card_1 ul li:first-child a:hover:after {
+.product_card ul li:first-child a:hover:after {
     background-image: url("../images/shopping_basket_hover.svg");
 }
 
-.product_card_1 ul li a:hover:after {
+.product_card ul li a:hover:after {
     background-image: url("../images/heart_hover.svg");
 }
 
-.product_card_1 ul li:last-of-type a:hover:after {
+.product_card ul li:last-of-type a:hover:after {
     background-image: url("../images/search_icon_hover.svg");
 }
 
-.product_card_1 ul {
+.product_card ul {
     position: absolute;
     width: 100%;
     display: flex;
@@ -476,7 +476,7 @@ main section h4 {
     transition: 0.4s;
 }
 
-.product_card_1:hover ul {
+.product_card:hover ul {
     bottom: 65px;
 }
 
