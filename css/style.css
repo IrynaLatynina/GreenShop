@@ -576,3 +576,12 @@ main section h4 {
     text-align: left;
 
 }
+.price_old_style {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 89%;
+    color: #a5a5a5;
+    font-family: 'cera_proregular', serif;
+    text-align: left;
+    text-decoration: line-through;
+}
