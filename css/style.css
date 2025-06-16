@@ -263,27 +263,12 @@ header nav ul {
     position: absolute;
     top: 25%;
     right: 10px;
-    background-image: url("../images/smallArrowRight.svg");
 }
 
 .submenu li:hover .arrow-image {
-    background-image: url("../images/small_whiteArrowRight.svg");
+    content:url("../images/small_whiteArrowRight.svg");
 }
 
-/*.dropdown ul li:last-of-type a:after {*/
-/*    display: block;*/
-/*    content: '';*/
-/*    background-image: url("../images/smallArrowRight.svg");*/
-/*    width: 8px;*/
-/*    height: 12px;*/
-/*    position: absolute;*/
-/*    top: 25%;*/
-/*    right: 10px;*/
-/*}*/
-
-/*.dropdown ul li:last-of-type a:hover {*/
-/*    background-image: url("../images/ArrowRight_hover.svg");*/
-/*}*/
 .dropdown:hover .submenu {
     height: 250px;
     overflow: visible;
