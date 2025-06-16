@@ -245,6 +245,10 @@ header nav ul {
 .has-arrow {
     position: relative;
 }
+.submenu-2 li:hover a {
+    color: white !important;
+    font-weight: 700;
+}
 
 .arrow-image {
     position: absolute;
