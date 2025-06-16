@@ -221,11 +221,12 @@ header {
     font-family: 'cera_proregular', serif;
     min-width: 178px;
     position: absolute;
-    left: -35px;
-    top:27px;
+    left: 188px;
+    top:-205px;
 }
 .dropdown:hover .submenu{
     height: 400px;
+    overflow: visible;
 }
 .submenu li:hover {
     font-weight: 700;
@@ -245,18 +246,6 @@ header nav ul {
 
 header nav ul li ul {
     gap: 0;
-}
-header nav ul li ul:first-of-type{
-    width: auto;
-}
-header nav ul li ul:nth-of-type(2){
-    width: auto;
-}
-header nav ul li ul:nth-of-type(3){
-    width: auto;
-}
-header nav ul li ul:last-of-type{
-    width: auto;
 }
 
 .login_link {
