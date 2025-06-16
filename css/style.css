@@ -202,6 +202,7 @@ header nav ul {
     height: 43px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1;
+    transition: 0.9s;
 }
 
 .submenu li {
@@ -705,7 +706,6 @@ main section h4 {
     align-items: center;
     justify-content: center;
     padding-left: 40px;
-
 }
 
 .main_hot_products_container h3 {
@@ -740,8 +740,11 @@ main section h4 {
 }
 
 .container_for_text {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     padding: 37px 35px;
+    width: 100%;
 }
 
 .image_container {
@@ -757,6 +760,7 @@ main section h4 {
     margin-bottom: 138px;
 }
 
+
 .find_more_button {
     line-height: 100%;
     background-color: #46A358;
@@ -770,8 +774,9 @@ main section h4 {
     font-family: 'cera_proregular', serif;
     text-align: center;
     display: inline-flex;
-    align-items: flex-end;
+    align-items: center;
     gap: 2px;
+    align-self: flex-end;
 }
 
 .image_container image {
