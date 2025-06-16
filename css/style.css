@@ -551,6 +551,7 @@ main section h4 {
     height: 350px;
     position: relative;
     overflow: hidden;
+    border-top: solid 1px transparent;
 }
 
 .product_card:hover {
@@ -686,7 +687,6 @@ main section h4 {
     padding-top: 4px;
     font-family: 'cera_probold', serif;
     text-align: left;
-
 }
 
 .price_old_style {
