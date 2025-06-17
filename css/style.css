@@ -1021,3 +1021,11 @@ footer div .footer_images p {
     padding-bottom: 13px;
     padding-top:18px;
 }
+ .rights {
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 214%;
+     color: #3d3d3d;
+     font-family: 'cera_proregular', serif;
+     text-align: center;
+ }
