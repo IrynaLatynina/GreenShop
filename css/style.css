@@ -695,7 +695,6 @@ main section h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 40px;
 }
 
 .main_hot_products_container h3 {
@@ -865,7 +864,7 @@ main section h4 {
 .main_footer_container {
     max-width: 1200px;
     margin: auto;
-    }
+}
 
 .first_footer_container {
     width: 100%;
@@ -945,6 +944,7 @@ footer div .footer_images p {
     gap: 0;
     width: 100%;
 }
+
 .join_form form label {
     flex: 1;
 }
@@ -983,17 +983,19 @@ footer div .footer_images p {
     color: #3d3d3d;
     font-family: 'cera_proregular', serif;
 }
+
 .third_footer_container {
     width: 100%;
     background: #fbfbfb;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 62px;
     margin-bottom: 24px;
     padding: 25px;
 }
-.third_footer_container h3{
+
+.third_footer_container h3 {
     font-weight: 700;
     font-size: 18px;
     line-height: 89%;
@@ -1001,7 +1003,8 @@ footer div .footer_images p {
     font-family: 'cera_proregular', serif;
     padding-bottom: 8px;
 }
-.third_footer_container ul li a{
+
+.third_footer_container ul li a {
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
@@ -1009,29 +1012,34 @@ footer div .footer_images p {
     color: #3d3d3d;
     font-family: 'cera_proregular', serif;
 }
-.third_footer_container ul{
+
+.third_footer_container ul {
     list-style: none;
 }
-.third_footer_container ul li{
+
+.third_footer_container ul li {
     margin-bottom: 10px;
 }
-.social_media h3{
+
+.social_media h3 {
     padding-bottom: 33px;
 }
-.social_media h2{
+
+.social_media h2 {
     font-weight: 700;
     font-size: 18px;
     line-height: 89%;
     color: #3d3d3d;
     font-family: 'cera_proregular', serif;
     padding-bottom: 13px;
-    padding-top:18px;
+    padding-top: 18px;
 }
- .rights {
-     font-weight: 400;
-     font-size: 14px;
-     line-height: 214%;
-     color: #3d3d3d;
-     font-family: 'cera_proregular', serif;
-     text-align: center;
- }
+
+.rights {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 214%;
+    color: #3d3d3d;
+    font-family: 'cera_proregular', serif;
+    text-align: center;
+}
