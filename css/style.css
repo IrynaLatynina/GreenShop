@@ -892,7 +892,7 @@ main section h4 {
     height: 74px;
     background-color: rgba(70, 163, 88, 0.13);
     border-radius: 50%;
-    left: -6px;
+    left: -8px;
     top: 40%;
     transform: translateY(-50%);
     z-index: 1;
