@@ -865,8 +865,7 @@ main section h4 {
 .main_footer_container {
     max-width: 1200px;
     margin: auto;
-    padding-left: 40px;
-}
+    }
 
 .first_footer_container {
     width: 100%;
@@ -875,7 +874,6 @@ main section h4 {
     align-items: center;
     justify-content: space-between;
     gap: 62px;
-    margin-bottom: 24px;
     padding: 25px;
 }
 
@@ -968,7 +966,6 @@ footer div .footer_images p {
     align-items: center;
     justify-content: space-between;
     gap: 62px;
-    margin-bottom: 24px;
     padding: 25px;
     background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%);
 }
