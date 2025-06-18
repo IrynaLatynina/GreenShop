@@ -919,7 +919,7 @@ footer div .footer_images p {
 }
 
 .join_form button {
-    max-width: 85px;
+    min-width: 85px;
     background-color: #46A358;
     border-radius: 4px;
     font-weight: 700;
@@ -928,6 +928,9 @@ footer div .footer_images p {
     color: #fff;
     font-family: 'cera_proregular', serif;
     padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+
 }
 
 .join_form p {
@@ -941,7 +944,13 @@ footer div .footer_images p {
 .join_form form {
     display: flex;
     margin-bottom: 17px;
+    gap: 0;
+    width: 100%;
 }
+.join_form form label {
+    flex: 1;
+}
+
 
 .join_form h3 {
     font-weight: 700;
