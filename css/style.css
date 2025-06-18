@@ -878,10 +878,24 @@ main section h4 {
 
 .footer_images {
     max-width: 100%;
+    position: relative;
 }
 
 .footer_images img {
     padding: 31px 48px 19px 7px;
+    z-index: 2;
+}
+.footer_images::before {
+    content: '';
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    background-color: rgba(70, 163, 88, 0.13);
+    border-radius: 50%;
+    left: -6px;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 1;
 }
 
 .join_form {
