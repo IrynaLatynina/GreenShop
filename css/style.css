@@ -195,11 +195,11 @@ header nav ul {
     font-weight: 400;
     color: #3d3d3d;
     font-family: 'cera_proregular', serif;
-    min-width: 188px;
+    width: 188px;
+    max-height: 143px;
     left: -55px;
     top: 67px;
     overflow: hidden;
-    height: 43px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1;
     transition: 0.9s;
@@ -233,7 +233,7 @@ header nav ul {
     left: 100%;
     top: 0;
     background-color: #edf6ee;
-    min-width: 188px;
+    width: 178px;
 }
 
 .has-arrow:hover > .submenu-2 {
@@ -246,7 +246,7 @@ header nav ul {
     min-width: 178px;
     position: absolute;
     left: 188px;
-    top: -205px;
+    top: -99px;
     z-index: 2;
 }
 
@@ -261,7 +261,7 @@ header nav ul {
 
 .arrow-image {
     position: absolute;
-    top: 25%;
+    top: 39%;
     right: 10px;
 }
 
@@ -278,7 +278,7 @@ header nav ul li ul {
     gap: 0;
 }
 
-header nav ul li:after {
+header nav > ul > li:after {
     content: "";
     display: block;
     width: 0;
@@ -313,6 +313,12 @@ header nav ul li:hover::after {
     display: flex;
     margin-bottom: 20px;
     font-family: 'cera_proregular', serif;
+
+}
+
+.login_link:hover {
+    background-color: #3d8b4e;
+    transform: rotate(360deg);
 }
 
 .main_container {
@@ -382,6 +388,10 @@ main section p {
     margin-bottom: 85px;
     text-decoration: none;
     font-family: 'cera_proregular', serif;
+}
+
+.shopping_link:hover {
+    background-color: #3d8b4e;
 }
 
 header nav ul {
