@@ -319,6 +319,7 @@ header nav ul li:hover::after {
 .login_link:hover {
     background-color: #3d8b4e;
     transform: rotate(360deg);
+    transition: 0.4s;
 }
 
 .main_container {
