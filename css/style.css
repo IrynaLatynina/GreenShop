@@ -452,6 +452,7 @@ main section h4 {
     width: 100%;
     height: auto;
     display: block;
+    margin-left: -10px;
 }
 
 .product_items {
