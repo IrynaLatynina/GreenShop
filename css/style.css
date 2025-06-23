@@ -568,7 +568,6 @@ main section h4 {
     border-radius: 6px;
     margin-bottom: 85px;
     margin-left: 30px;
-
 }
 
 .filter_button a {
@@ -579,12 +578,14 @@ main section h4 {
     font-family: 'cera_proregular', serif;
     text-decoration: none;
 }
+.filter_button:hover {
+    transform: scale(1.1);
+}
 
 .size {
     display: flex;
     flex-direction: column;
     padding-left: 18px;
-
 }
 
 .size h4 {
@@ -612,7 +613,10 @@ main section h4 {
     text-decoration: none;
     font-family: 'cera_proregular', serif;
 }
-
+.size ul li a:hover {
+    color: #46a358;
+    font-weight: 700;
+}
 .imageSuperSale {
     padding-top: 20px;
     width: 100%;
