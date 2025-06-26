@@ -1302,3 +1302,40 @@ footer div .footer_images p {
     transform: scale(1.3);
     transition: transform 0.4s;
 }
+
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #46A358;
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    animation:
+            loading 1s linear 3,                /* Rotation animation: 3 times */
+            fadeOut 0.1s ease-out 2.9s forwards; /* Fade out near the end of the last rotation */
+}
+
+@keyframes loading {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden; /* Makes the element completely undetectable after fading */
+    }
+}
+
