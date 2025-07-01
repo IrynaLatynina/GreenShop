@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'cera_probold';
+  src: url("../fonts/cerapro-bold-webfont.eot");
+  src: url("../fonts/cerapro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cerapro-bold-webfont.woff2") format("woff2"), url("../fonts/cerapro-bold-webfont.woff") format("woff"), url("../fonts/cerapro-bold-webfont.ttf") format("truetype"), url("../fonts/cerapro-bold-webfont.svg#cera_probold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'cera_proregular';
+  src: url("../fonts/cerapro-regular-webfont.eot");
+  src: url("../fonts/cerapro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cerapro-regular-webfont.woff2") format("woff2"), url("../fonts/cerapro-regular-webfont.woff") format("woff"), url("../fonts/cerapro-regular-webfont.ttf") format("truetype"), url("../fonts/cerapro-regular-webfont.svg#cera_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'cera_proitalic';
+  src: url("../fonts/cerapro-italic-webfont.eot");
+  src: url("../fonts/cerapro-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cerapro-italic-webfont.woff2") format("woff2"), url("../fonts/cerapro-italic-webfont.woff") format("woff"), url("../fonts/cerapro-italic-webfont.ttf") format("truetype"), url("../fonts/cerapro-italic-webfont.svg#cera_proitalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.d-flex {
+  display: flex; }
+
+.registration_container {
+  max-width: 500px;
+  border: solid 1px silver;
+  margin: auto;
+  padding: 52px 100px 50px;
+  border-bottom: solid 10px #46A358;
+  align-items: center; }
+  .registration_container .login_title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 80%;
+    color: #3d3d3d;
+    margin-bottom: 40px;
+    text-align: center; }
+    .registration_container .login_title .green_color {
+      color: #46A358; }
+  .registration_container .registration_form {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 123%;
+    color: #3d3d3d;
+    margin-bottom: 14px; }
+  .registration_container .form_input {
+    width: 100%;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding: 12px 14px; }
+  .registration_container .form_input_marginB_16 {
+    margin-bottom: 16px; }
+  .registration_container .form_input_marginB_38 {
+    margin-bottom: 38px; }
+  .registration_container .submit_button {
+    width: 100%;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding: 16px 119px;
+    margin-bottom: 39px;
+    background-color: #46A358;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    text-align: center; }
+  .registration_container .register_options {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 123%;
+    color: #3d3d3d;
+    margin-bottom: 27px;
+    text-align: center; }
+  .registration_container .google_link {
+    width: 100%;
+    gap: 9px;
+    border: 1px solid #eaeaea;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 123%;
+    color: #727272;
+    padding: 10px 0;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center; }
+  .registration_container .facebook_link {
+    width: 100%;
+    gap: 9px;
+    border: 1px solid #eaeaea;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 123%;
+    color: #727272;
+    padding: 10px 0;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center; }
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #46A358;
+  border-radius: 50%;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 8;
+  animation: loading 1s linear 3, fadeOut 0.1s ease-out 2.9s forwards;
+  /* Fade out near the end of the last rotation */ }
+
+@keyframes loading {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg); } }
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    /* Makes the element completely undetectable after fading */ } }
+
+/*# sourceMappingURL=Registration-styles.css.map */
