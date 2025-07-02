@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap');
+
+$font-family-cera_proregular: 'cera_proregular', serif;
+$font-family-cera_probold: 'cera_probold', serif;
+$font-family-cera_proitalic: 'cera_proitalic', serif;
+$primary_green-color: #46A358;
+$primary_white-color: #edf6ee;
+$text-color: #3d3d3d;
+$secondary-text-color: #727272;
+
 @font-face {
   font-family: 'cera_probold';
   src: url('../fonts/cerapro-bold-webfont.eot');
@@ -8,7 +18,6 @@
   url('../fonts/cerapro-bold-webfont.svg#cera_probold') format('svg');
   font-weight: normal;
   font-style: normal;
-
 }
 
 
@@ -22,7 +31,6 @@
   url('../fonts/cerapro-regular-webfont.svg#cera_proregular') format('svg');
   font-weight: normal;
   font-style: normal;
-
 }
 
 
@@ -36,16 +44,7 @@
   url('../fonts/cerapro-italic-webfont.svg#cera_proitalic') format('svg');
   font-weight: normal;
   font-style: normal;
-
 }
-
-$font-family-cera_proregular: 'cera_proregular', serif;
-$font-family-cera_probold: 'cera_probold', serif;
-$font-family-cera_proitalic: 'cera_proitalic', serif;
-$primary_green-color: #46A358;
-$primary_white-color: #edf6ee;
-$text-color: #3d3d3d;
-$secondary-text-color: #727272;
 
 * {
   padding: 0;
@@ -57,218 +56,10 @@ $secondary-text-color: #727272;
   display: flex;
 }
 
-header {
-  padding-top: 30px;
-  margin-bottom: 10px;
+@import "header.css";
+/*HEADER*/
 
-  .nav_container {
-    max-width: 1200px;
-    margin: auto;
-    border-bottom: 0.30px solid rgba(70, 163, 88, 0.5);
-    text-decoration: none;
-    justify-content: space-between;
-  }
-
-  nav {
-    ul {
-      display: flex;
-      gap: 50px;
-
-      li {
-        &:hover::after {
-          width: 100%;
-        }
-
-        .navigation {
-          font-weight: 400;
-          font-size: 16px;
-          color: $text-color;
-          text-decoration: none;
-          font-family: $font-family-cera_proregular;
-
-          &:hover {
-            font-weight: 700;
-            font-size: 16px;
-            color: $text-color;
-          }
-        }
-      }
-    }
-
-    & > ul > li:after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 3px;
-      background-color: $primary_green-color;
-      margin-top: 32px;
-      transition: 0.4s;
-    }
-  }
-}
-
-
-.dropdown {
-  position: relative;
-
-  &:hover > .submenu {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.dropdown:hover .submenu {
-  height: 250px;
-  overflow: visible;
-}
-
-.submenu {
-  display: none;
-  position: absolute;
-  background-color: $primary_white-color;
-  font-weight: 400;
-  color: $text-color;
-  font-family: $font-family-cera_proregular;
-  width: 188px;
-  max-height: 143px;
-  left: -55px;
-  top: 67px;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-  transition: 0.9s;
-  gap: 0;
-
-  .arrow-image {
-    position: absolute;
-    top: 39%;
-    right: 10px;
-  }
-
-  > li:hover a {
-    color: #ffffff;
-  }
-
-  li {
-    width: 100%;
-    background-color: $primary_white-color;
-    padding: 7px 14px;
-
-    a {
-      text-decoration: none;
-    }
-
-    &:hover {
-      font-weight: 700;
-      font-size: 16px;
-      color: $text-color;
-      background-color: #1a712a;
-
-      .arrow-image {
-        content: url("../images/small_whiteArrowRight.svg");
-      }
-    }
-  }
-
-  .has-arrow {
-    position: relative;
-
-    &:hover > .submenu-2 {
-      display: block;
-      font-weight: 400;
-      font-size: 16px;
-      color: $text-color;
-      text-decoration: none;
-      font-family: $font-family-cera_proregular;
-      min-width: 178px;
-      position: absolute;
-      left: 188px;
-      top: -99px;
-      z-index: 2;
-    }
-  }
-
-  .submenu-2 {
-    display: none;
-    position: absolute;
-    left: 100%;
-    top: 0;
-    background-color: $primary_white-color;
-    width: 178px;
-
-    li:hover a {
-      color: white !important;
-      font-weight: 700;
-    }
-  }
-
-  .icons_container {
-    &:first-of-type {
-
-      align-items: center;
-    }
-
-    &:nth-of-type(2) {
-      align-items: center;
-    }
-  }
-}
-
-
-
-.submenu li .submenu-2 li a, .submenu li a {
-  color: black;
-}
-
-.login_link {
-  line-height: 100%;
-  background-color: $primary_green-color;
-  font-weight: 500;
-  font-size: 16px;
-  color: #fff;
-  padding: 7px 17px;
-  gap: 4px;
-  border-radius: 6px;
-  text-decoration: none;
-  display: flex;
-  margin-bottom: 20px;
-  font-family: $font-family-cera_proregular;
-
-  &:hover {
-    background-color: #3d8b4e;
-    transform: rotate(360deg);
-    transition: 0.4s;
-  }
-
-}
-
-header nav ul {
-  list-style: none;
-}
-
-.search:before {
-  content: url("../images/search_icon.svg");
-  margin-right: 30px;
-}
-
-.search:hover:before {
-  content: url("../images/search_icon_hover.svg");
-}
-
-.basket:before {
-  content: url("../images/shopping_basket.svg");
-  margin-right: 30px;
-}
-
-.basket:hover:before {
-  content: url("../images/shopping_basket_hover.svg");
-}
-
-.heart:before {
-  content: url("../images/heart.svg");
-  margin-right: 10px;
-}
-
+/*MAIN*/
 main {
   h3 {
     font-weight: 500;
@@ -988,10 +779,11 @@ main {
       }
     }
   }
+
 }
 
-
-.main_footer_container {
+/*FOOTER*/
+footer {
   max-width: 1200px;
   margin: auto;
 
@@ -1111,111 +903,110 @@ main {
       }
     }
   }
-}
 
-
-.second_footer_container {
-  width: 100%;
-  background: #fbfbfb;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 62px;
-  padding: 25px;
-  background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%);
-
-  .address {
+  .second_footer_container {
+    width: 100%;
+    background: #fbfbfb;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    gap: 2px;
+    gap: 62px;
+    padding: 25px;
+    background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%);
 
-    h3 {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 157%;
-      color: $text-color;
-      font-family: $font-family-cera_proregular;
-    }
-  }
-}
+    .address {
+      display: flex;
+      justify-content: space-between;
+      gap: 2px;
 
-
-.third_footer_container {
-  width: 100%;
-  background: #fbfbfb;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 62px;
-  margin-bottom: 24px;
-  padding: 25px;
-
-  h3 {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 89%;
-    color: $text-color;
-    font-family: $font-family-cera_proregular;
-    padding-bottom: 8px;
-  }
-
-  ul {
-    list-style: none;
-
-    li {
-      margin-bottom: 10px;
-
-      &:hover a {
-        color: green;
-        font-family: $font-family-cera_probold;
-      }
-
-      a {
-        text-decoration: none;
+      h3 {
         font-weight: 400;
         font-size: 14px;
-        line-height: 214%;
+        line-height: 157%;
         color: $text-color;
         font-family: $font-family-cera_proregular;
       }
     }
   }
 
-  .social_media {
-    h3 {
-      padding-bottom: 33px;
-    }
+  .third_footer_container {
+    width: 100%;
+    background: #fbfbfb;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 62px;
+    margin-bottom: 24px;
+    padding: 25px;
 
-    h2 {
+    h3 {
       font-weight: 700;
       font-size: 18px;
       line-height: 89%;
       color: $text-color;
       font-family: $font-family-cera_proregular;
-      padding-bottom: 13px;
-      padding-top: 18px;
+      padding-bottom: 8px;
     }
 
-    a {
-      img {
-        transition: transform 0.4s;
+    ul {
+      list-style: none;
+
+      li {
+        margin-bottom: 10px;
+
+        &:hover a {
+          color: green;
+          font-family: $font-family-cera_probold;
+        }
+
+        a {
+          text-decoration: none;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 214%;
+          color: $text-color;
+          font-family: $font-family-cera_proregular;
+        }
+      }
+    }
+
+    .social_media {
+      h3 {
+        padding-bottom: 33px;
       }
 
-      &:hover img {
-        transform: scale(1.3);
-        transition: transform 0.4s;
+      h2 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 89%;
+        color: $text-color;
+        font-family: $font-family-cera_proregular;
+        padding-bottom: 13px;
+        padding-top: 18px;
+      }
+
+      a {
+        img {
+          transition: transform 0.4s;
+        }
+
+        &:hover img {
+          transform: scale(1.3);
+          transition: transform 0.4s;
+        }
       }
     }
   }
-}
 
-.rights {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 214%;
-  color: $text-color;
-  font-family: $font-family-cera_proregular;
-  text-align: center;
+
+  .rights {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 214%;
+    color: $text-color;
+    font-family: $font-family-cera_proregular;
+    text-align: center;
+  }
 }
 
 
@@ -1252,6 +1043,8 @@ main {
     visibility: hidden; /* Makes the element completely undetectable after fading */
   }
 }
+
+
 
 
 

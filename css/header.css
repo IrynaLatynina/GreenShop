@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'cera_probold';
+  src: url("../fonts/cerapro-bold-webfont.eot");
+  src: url("../fonts/cerapro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cerapro-bold-webfont.woff2") format("woff2"), url("../fonts/cerapro-bold-webfont.woff") format("woff"), url("../fonts/cerapro-bold-webfont.ttf") format("truetype"), url("../fonts/cerapro-bold-webfont.svg#cera_probold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'cera_proregular';
+  src: url("../fonts/cerapro-regular-webfont.eot");
+  src: url("../fonts/cerapro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cerapro-regular-webfont.woff2") format("woff2"), url("../fonts/cerapro-regular-webfont.woff") format("woff"), url("../fonts/cerapro-regular-webfont.ttf") format("truetype"), url("../fonts/cerapro-regular-webfont.svg#cera_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'cera_proitalic';
+  src: url("../fonts/cerapro-italic-webfont.eot");
+  src: url("../fonts/cerapro-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cerapro-italic-webfont.woff2") format("woff2"), url("../fonts/cerapro-italic-webfont.woff") format("woff"), url("../fonts/cerapro-italic-webfont.ttf") format("truetype"), url("../fonts/cerapro-italic-webfont.svg#cera_proitalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.d-flex {
+  display: flex; }
+
+header {
+  padding-top: 30px;
+  margin-bottom: 10px; }
+  header .nav_container {
+    max-width: 1200px;
+    margin: auto;
+    border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
+    justify-content: space-between; }
+    header .nav_container nav > ul > li:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 3px;
+      background-color: #46A358;
+      margin-top: 32px;
+      transition: 0.4s; }
+    header .nav_container nav ul {
+      display: flex;
+      gap: 50px;
+      list-style: none; }
+      header .nav_container nav ul li {
+        position: relative;
+        text-decoration: none; }
+        header .nav_container nav ul li:hover .submenu {
+          height: 250px;
+          overflow: visible; }
+        header .nav_container nav ul li .navigation {
+          font-weight: 400;
+          font-size: 16px;
+          color: #3d3d3d;
+          text-decoration: none;
+          font-family: "cera_proregular", serif; }
+          header .nav_container nav ul li .navigation:hover {
+            font-weight: 700;
+            font-size: 16px;
+            color: #3d3d3d; }
+        header .nav_container nav ul li:hover::after {
+          width: 100%; }
+        header .nav_container nav ul li:hover > .submenu {
+          display: flex;
+          flex-direction: column;
+          opacity: 1;
+          visibility: visible; }
+        header .nav_container nav ul li .submenu {
+          display: none;
+          position: absolute;
+          background-color: #edf6ee;
+          font-weight: 400;
+          color: #3d3d3d;
+          font-family: "cera_proregular", serif;
+          width: 188px;
+          max-height: 0;
+          left: -35px;
+          top: 67px;
+          overflow: hidden;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          z-index: 1;
+          transition: all 0.3s ease;
+          opacity: 0;
+          visibility: hidden;
+          gap: 0; }
+          header .nav_container nav ul li .submenu > li a {
+            text-decoration: none; }
+            header .nav_container nav ul li .submenu > li a:hover a {
+              color: #ffffff;
+              text-decoration: none; }
+          header .nav_container nav ul li .submenu li {
+            width: 100%;
+            background-color: #edf6ee;
+            padding: 7px 14px;
+            text-decoration: none; }
+            header .nav_container nav ul li .submenu li:hover {
+              font-weight: 700;
+              font-size: 16px;
+              color: #3d3d3d;
+              background-color: #1a712a; }
+              header .nav_container nav ul li .submenu li:hover > a {
+                color: #ffffff; }
+              header .nav_container nav ul li .submenu li:hover .arrow-image {
+                content: url("../images/small_whiteArrowRight.svg"); }
+            header .nav_container nav ul li .submenu li:hover > .submenu-2 {
+              display: block;
+              font-weight: 400;
+              font-size: 16px;
+              color: #3d3d3d;
+              text-decoration: none;
+              font-family: "cera_proregular", serif;
+              min-width: 178px;
+              position: absolute;
+              left: 188px;
+              top: -99px;
+              z-index: 2; }
+            header .nav_container nav ul li .submenu li .submenu-2 {
+              display: none;
+              position: absolute;
+              left: 100%;
+              top: 0;
+              background-color: #edf6ee;
+              width: 178px; }
+              header .nav_container nav ul li .submenu li .submenu-2 li:hover a {
+                color: white !important;
+                font-weight: 700; }
+            header .nav_container nav ul li .submenu li .has-arrow {
+              position: relative; }
+            header .nav_container nav ul li .submenu li .arrow-image {
+              position: absolute;
+              top: 39%;
+              right: 10px; }
+    header .nav_container .icons_container {
+      display: flex;
+      gap: 5px; }
+      header .nav_container .icons_container .search:before {
+        content: url("../images/search_icon.svg");
+        margin-right: 30px; }
+      header .nav_container .icons_container .search:hover:before {
+        content: url("../images/search_icon_hover.svg"); }
+      header .nav_container .icons_container .basket:before {
+        content: url("../images/shopping_basket.svg");
+        margin-right: 30px; }
+      header .nav_container .icons_container .basket:hover:before {
+        content: url("../images/shopping_basket_hover.svg"); }
+      header .nav_container .icons_container .heart:before {
+        content: url("../images/heart.svg");
+        margin-right: 10px; }
+      header .nav_container .icons_container .login_link {
+        line-height: 100%;
+        background-color: #46A358;
+        font-weight: 500;
+        font-size: 16px;
+        color: #fff;
+        padding: 7px 17px;
+        gap: 4px;
+        border-radius: 6px;
+        text-decoration: none;
+        display: flex;
+        margin-bottom: 20px;
+        font-family: "cera_proregular", serif; }
+        header .nav_container .icons_container .login_link:hover {
+          background-color: #3d8b4e;
+          transform: rotate(360deg);
+          transition: 0.4s; }
+  header .submenu li .submenu-2 li a, header .submenu li a {
+    color: black; }
+
+/*# sourceMappingURL=header.css.map */
