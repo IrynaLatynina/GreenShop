@@ -31,7 +31,8 @@ header {
     max-width: 1200px;
     margin: auto;
     border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
-    justify-content: space-between; }
+    justify-content: space-between;
+    display: flex; }
     header .nav_container nav > ul > li:after {
       content: "";
       display: block;
@@ -134,7 +135,8 @@ header {
               right: 10px; }
     header .nav_container .icons_container {
       display: flex;
-      gap: 5px; }
+      gap: 5px;
+      align-items: baseline; }
       header .nav_container .icons_container .search:before {
         content: url("../images/search_icon.svg");
         margin-right: 30px; }
@@ -149,7 +151,6 @@ header {
         content: url("../images/heart.svg");
         margin-right: 10px; }
       header .nav_container .icons_container .login_link {
-        line-height: 100%;
         background-color: #46A358;
         font-weight: 500;
         font-size: 16px;

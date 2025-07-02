@@ -63,6 +63,7 @@ header {
     margin: auto;
     border-bottom: 0.30px solid rgba(70, 163, 88, 0.5);
     justify-content: space-between;
+    display: flex;
 
     nav {
       & > ul > li:after {
@@ -211,6 +212,7 @@ header {
     .icons_container {
       display: flex;
       gap: 5px;
+      align-items: baseline;
       .search:before {
         content: url("../images/search_icon.svg");
         margin-right: 30px;
@@ -235,7 +237,6 @@ header {
       }
 
       .login_link {
-        line-height: 100%;
         background-color: $primary_green-color;
         font-weight: 500;
         font-size: 16px;
