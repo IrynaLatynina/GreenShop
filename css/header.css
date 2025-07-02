@@ -149,7 +149,6 @@ header {
         content: url("../images/heart.svg");
         margin-right: 10px; }
       header .nav_container .icons_container .login_link {
-        line-height: 100%;
         background-color: #46A358;
         font-weight: 500;
         font-size: 16px;
