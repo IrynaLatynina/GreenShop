@@ -43,8 +43,9 @@ $font-family-cera_proregular: 'cera_proregular', serif;
 $font-family-cera_probold: 'cera_probold', serif;
 $font-family-cera_proitalic: 'cera_proitalic', serif;
 $primary_green-color: #46A358;
-$primary_white-color: #eaeaea;
+$primary_white-color: #edf6ee;
 $text-color: #3d3d3d;
+$secondary-text-color: #727272;
 
 * {
   padding: 0;
@@ -60,25 +61,6 @@ header {
   padding-top: 30px;
   margin-bottom: 10px;
 
-  nav ul {
-    display: flex;
-    gap: 50px;
-
-    li:hover::after {
-      width: 100%;
-    }
-  }
-
-  nav > ul > li:after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 3px;
-    background-color: #46A358;
-    margin-top: 32px;
-    transition: 0.4s;
-  }
-
   .nav_container {
     max-width: 1200px;
     margin: auto;
@@ -86,20 +68,42 @@ header {
     text-decoration: none;
     justify-content: space-between;
   }
-}
 
+  nav {
+    ul {
+      display: flex;
+      gap: 50px;
 
-.navigation {
-  font-weight: 400;
-  font-size: 16px;
-  color: #3d3d3d;
-  text-decoration: none;
-  font-family: 'cera_proregular', serif;
+      li {
+        &:hover::after {
+          width: 100%;
+        }
 
-  &:hover {
-    font-weight: 700;
-    font-size: 16px;
-    color: #3d3d3d;
+        .navigation {
+          font-weight: 400;
+          font-size: 16px;
+          color: $text-color;
+          text-decoration: none;
+          font-family: $font-family-cera_proregular;
+
+          &:hover {
+            font-weight: 700;
+            font-size: 16px;
+            color: $text-color;
+          }
+        }
+      }
+    }
+
+    & > ul > li:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 3px;
+      background-color: $primary_green-color;
+      margin-top: 32px;
+      transition: 0.4s;
+    }
   }
 }
 
@@ -121,10 +125,10 @@ header {
 .submenu {
   display: none;
   position: absolute;
-  background-color: #edf6ee;
+  background-color: $primary_white-color;
   font-weight: 400;
-  color: #3d3d3d;
-  font-family: 'cera_proregular', serif;
+  color: $text-color;
+  font-family: $font-family-cera_proregular;
   width: 188px;
   max-height: 143px;
   left: -55px;
@@ -147,22 +151,22 @@ header {
 
   li {
     width: 100%;
-    background-color: #edf6ee;
+    background-color: $primary_white-color;
     padding: 7px 14px;
 
     a {
       text-decoration: none;
     }
 
-    &:hover .arrow-image {
-      content: url("../images/small_whiteArrowRight.svg");
-    }
-
     &:hover {
       font-weight: 700;
       font-size: 16px;
-      color: #3d3d3d;
+      color: $text-color;
       background-color: #1a712a;
+
+      .arrow-image {
+        content: url("../images/small_whiteArrowRight.svg");
+      }
     }
   }
 
@@ -173,9 +177,9 @@ header {
       display: block;
       font-weight: 400;
       font-size: 16px;
-      color: #3d3d3d;
+      color: $text-color;
       text-decoration: none;
-      font-family: 'cera_proregular', serif;
+      font-family: $font-family-cera_proregular;
       min-width: 178px;
       position: absolute;
       left: 188px;
@@ -189,7 +193,7 @@ header {
     position: absolute;
     left: 100%;
     top: 0;
-    background-color: #edf6ee;
+    background-color: $primary_white-color;
     width: 178px;
 
     li:hover a {
@@ -198,14 +202,19 @@ header {
     }
   }
 
-  .icons_container:first-of-type {
-    align-items: center;
-  }
+  .icons_container {
+    &:first-of-type {
 
-  .icons_container:nth-of-type(2) {
-    align-items: center;
+      align-items: center;
+    }
+
+    &:nth-of-type(2) {
+      align-items: center;
+    }
   }
 }
+
+
 
 .submenu li .submenu-2 li a, .submenu li a {
   color: black;
@@ -213,7 +222,7 @@ header {
 
 .login_link {
   line-height: 100%;
-  background-color: #46A358;
+  background-color: $primary_green-color;
   font-weight: 500;
   font-size: 16px;
   color: #fff;
@@ -223,7 +232,7 @@ header {
   text-decoration: none;
   display: flex;
   margin-bottom: 20px;
-  font-family: 'cera_proregular', serif;
+  font-family: $font-family-cera_proregular;
 
   &:hover {
     background-color: #3d8b4e;
@@ -267,8 +276,8 @@ main {
     line-height: 114%;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #3d3d3d;
-    font-family: 'cera_proregular', serif;
+    color: $text-color;
+    font-family: $font-family-cera_proregular;
   }
 
   h1 {
@@ -276,19 +285,19 @@ main {
     font-size: 70px;
     line-height: 100%;
     text-transform: uppercase;
-    color: #3d3d3d;
+    color: $text-color;
     text-align: left;
     margin-bottom: 7px;
-    font-family: 'cera_probold', serif;
+    font-family: $font-family-cera_probold;
   }
 
   section p {
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
-    color: #727272;
+    color: $secondary-text-color;
     margin-bottom: 44px;
-    font-family: 'cera_proregular', serif;
+    font-family: $font-family-cera_proregular;
   }
 
   .main_container {
@@ -311,7 +320,7 @@ main {
     }
 
     .shopping_link {
-      background-color: #46A358;
+      background-color: $primary_green-color;
       font-weight: 700;
       font-size: 16px;
       line-height: 125%;
@@ -321,7 +330,7 @@ main {
       padding: 9px 27px;
       margin-bottom: 85px;
       text-decoration: none;
-      font-family: 'cera_proregular', serif;
+      font-family: $font-family-cera_proregular;
 
       &:hover {
         background-color: #3d8b4e;
@@ -342,11 +351,11 @@ main {
     .category_list {
       max-width: 100%;
       background: #fbfbfb;
-      font-family: 'cera_proregular', serif;
+      font-family: $font-family-cera_proregular;
       font-weight: 700;
       font-size: 18px;
       line-height: 89%;
-      color: #3d3d3d;
+      color: $text-color;
 
       .categories {
         display: flex;
@@ -357,7 +366,7 @@ main {
         font-weight: 700;
         font-size: 15px;
         line-height: 267%;
-        color: #46a358;
+        color: $primary_green-color;
         margin-bottom: 37px;
 
         ul {
@@ -368,9 +377,9 @@ main {
             font-weight: 400;
             font-size: 15px;
             line-height: 267%;
-            color: #3d3d3d;
+            color: $text-color;
             text-decoration: none;
-            font-family: 'cera_proregular', serif;
+            font-family: $font-family-cera_proregular;
           }
         }
 
@@ -378,7 +387,7 @@ main {
           font-weight: 700;
           font-size: 18px;
           line-height: 89%;
-          color: #3d3d3d;
+          color: $text-color;
           margin-bottom: 7px;
           padding-top: 14px;
           padding-left: 18px;
@@ -394,7 +403,7 @@ main {
             font-weight: 700;
             font-size: 15px;
             line-height: 267%;
-            color: #46a358;
+            color: $primary_green-color;
           }
         }
       }
@@ -411,8 +420,8 @@ main {
           font-weight: 700;
           font-size: 18px;
           line-height: 89%;
-          color: #3d3d3d;
-          font-family: 'cera_proregular', serif;
+          color: $text-color;
+          font-family: $font-family-cera_proregular;
           margin-bottom: 29px;
         }
 
@@ -430,21 +439,21 @@ main {
             appearance: none;
             width: 16px;
             height: 16px;
-            background: #46A358;
+            background: $primary_green-color;
             border-radius: 50%;
             cursor: pointer;
             border: 2px solid white;
-            box-shadow: 0 0 0 1px #46A358;
+            box-shadow: 0 0 0 1px $primary_green-color;
           }
 
           &::-moz-range-thumb {
             width: 21px;
             height: 21px;
-            background: #46A358;
+            background: $primary_green-color;
             cursor: pointer;
-            box-shadow: 0 0 0 1px #46A358;
+            box-shadow: 0 0 0 1px $primary_green-color;
             border-radius: 100%;
-            fill: #46a358;
+            fill: $primary_green-color;
             stroke-width: 3px;
             stroke: #fff;
           }
@@ -454,13 +463,13 @@ main {
       .price-values {
         margin-top: 10px;
         font-size: 15px;
-        color: #3D3D3D;
+        color: $text-color;
         margin-bottom: 16px;
       }
 
       .filter_button {
         max-width: 90px;
-        background-color: #46A358;
+        background-color: $primary_green-color;
         padding: 8px 25px;
         border-radius: 6px;
         margin-bottom: 85px;
@@ -471,7 +480,7 @@ main {
           font-size: 16px;
           line-height: 125%;
           color: #fff;
-          font-family: 'cera_proregular', serif;
+          font-family: $font-family-cera_proregular;
           text-decoration: none;
         }
 
@@ -490,9 +499,9 @@ main {
           font-weight: 700;
           font-size: 18px;
           line-height: 89%;
-          color: #3d3d3d;
+          color: $text-color;
           text-align: left;
-          font-family: 'cera_proregular', serif;
+          font-family: $font-family-cera_proregular;
           margin-bottom: 29px;
         }
 
@@ -506,12 +515,12 @@ main {
             font-weight: 400;
             font-size: 15px;
             line-height: 267%;
-            color: #3d3d3d;
+            color: $text-color;
             text-decoration: none;
-            font-family: 'cera_proregular', serif;
+            font-family: $font-family-cera_proregular;
 
             &:hover {
-              color: #46a358;
+              color: $primary_green-color;
               font-weight: 700;
             }
           }
@@ -535,7 +544,7 @@ main {
         font-weight: 400;
         font-size: 15px;
         line-height: 107%;
-        color: #3d3d3d;
+        color: $text-color;
         text-decoration: none;
       }
 
@@ -549,7 +558,7 @@ main {
           display: flex;
           list-style: none;
           gap: 40px;
-          font-family: 'cera_proregular', serif;
+          font-family: $font-family-cera_proregular;
 
           li {
             &:after {
@@ -557,7 +566,7 @@ main {
               display: block;
               width: 0;
               height: 3px;
-              background-color: #46A358;
+              background-color: $primary_green-color;
               margin-top: 7px;
               transition: 0.4s;
             }
@@ -570,7 +579,7 @@ main {
               font-weight: 700;
               font-size: 15px;
               line-height: 107%;
-              color: #46a358;
+              color: $primary_green-color;
             }
           }
         }
@@ -604,7 +613,7 @@ main {
           border-top: solid 1px transparent;
 
           &:hover {
-            border-top: solid 1px #46a358;
+            border-top: solid 1px $primary_green-color;
             transition: 0.4s;
 
             ul {
@@ -623,18 +632,18 @@ main {
               font-weight: 400;
               font-size: 16px;
               line-height: 100%;
-              color: #3d3d3d;
+              color: $text-color;
               text-align: left;
-              font-family: 'cera_proregular', serif;
+              font-family: $font-family-cera_proregular;
             }
 
             .price_style {
               font-weight: 700;
               font-size: 18px;
               line-height: 89%;
-              color: #46a358;
+              color: $primary_green-color;
               padding-top: 4px;
-              font-family: 'cera_probold', serif;
+              font-family: $font-family-cera_probold;
               text-align: left;
             }
 
@@ -643,7 +652,7 @@ main {
               font-size: 18px;
               line-height: 89%;
               color: #a5a5a5;
-              font-family: 'cera_proregular', serif;
+              font-family: $font-family-cera_proregular;
               text-align: left;
               text-decoration: line-through;
               padding-left: 5px;
@@ -718,7 +727,7 @@ main {
           }
 
           .discount {
-            background-color: #46A358;
+            background-color: $primary_green-color;
             padding: 14px;
             position: absolute;
             top: 30px;
@@ -727,7 +736,7 @@ main {
             font-size: 16px;
             line-height: 100%;
             color: #fff;
-            font-family: 'cera_probold', serif;
+            font-family: $font-family-cera_probold;
           }
         }
       }
@@ -770,15 +779,15 @@ main {
           font-weight: 300;
           font-size: 18px;
           line-height: 89%;
-          color: #3d3d3d;
+          color: $text-color;
           text-decoration: none;
           justify-content: center;
-          font-family: 'cera_proregular', serif;
+          font-family: $font-family-cera_proregular;
 
           &:hover {
-            background-color: #46A358;
+            background-color: $primary_green-color;
             color: #fbfbfb;
-            font-family: 'cera_probold', serif;
+            font-family: $font-family-cera_probold;
           }
         }
       }
@@ -816,8 +825,8 @@ main {
         line-height: 133%;
         text-transform: uppercase;
         text-align: right;
-        color: #3d3d3d;
-        font-family: 'cera_probold', serif;
+        color: $text-color;
+        font-family: $font-family-cera_probold;
         margin-bottom: 8px;
       }
 
@@ -826,15 +835,15 @@ main {
         font-size: 14px;
         line-height: 171%;
         text-align: right;
-        color: #727272;
-        font-family: 'cera_proregular', serif;
+        color: $secondary-text-color;
+        font-family: $font-family-cera_proregular;
         margin-bottom: 25px;
         flex-wrap: wrap;
       }
 
       .find_more_button {
         line-height: 100%;
-        background-color: #46A358;
+        background-color: $primary_green-color;
         font-weight: 500;
         font-size: 16px;
         color: #fff;
@@ -842,7 +851,7 @@ main {
         border-radius: 6px;
         text-decoration: none;
         margin-bottom: 20px;
-        font-family: 'cera_proregular', serif;
+        font-family: $font-family-cera_proregular;
         text-align: center;
         display: inline-flex;
         align-items: center;
@@ -890,8 +899,8 @@ main {
       font-size: 30px;
       line-height: 53%;
       text-align: center;
-      color: #3d3d3d;
-      font-family: 'cera_probold', serif;
+      color: $text-color;
+      font-family: $font-family-cera_probold;
       margin-bottom: 15px;
     }
 
@@ -914,8 +923,8 @@ main {
           font-weight: 500;
           font-size: 14px;
           line-height: 114%;
-          color: #3d3d3d;
-          font-family: 'cera_probold', serif;
+          color: $text-color;
+          font-family: $font-family-cera_probold;
           justify-content: left;
           display: flex;
           gap: 2px;
@@ -938,8 +947,8 @@ main {
           font-weight: 500;
           font-size: 14px;
           line-height: 114%;
-          color: #46a358;
-          font-family: 'cera_proregular', serif;
+          color: $primary_green-color;
+          font-family: $font-family-cera_proregular;
           text-align: left;
         }
 
@@ -947,8 +956,8 @@ main {
           font-weight: 700;
           font-size: 20px;
           line-height: 130%;
-          color: #3d3d3d;
-          font-family: 'cera_proregular', serif;
+          color: $text-color;
+          font-family: $font-family-cera_proregular;
           text-align: left;
           text-transform: none;
         }
@@ -957,8 +966,8 @@ main {
           font-weight: 400;
           font-size: 14px;
           line-height: 157%;
-          color: #727272;
-          font-family: 'cera_proregular', serif;
+          color: $secondary-text-color;
+          font-family: $font-family-cera_proregular;
           text-align: left;
           display: inline-flex;
           align-items: flex-end;
@@ -1008,8 +1017,8 @@ main {
         font-weight: 700;
         font-size: 17px;
         line-height: 94%;
-        color: #3d3d3d;
-        font-family: 'cera_proregular', serif;
+        color: $text-color;
+        font-family: $font-family-cera_proregular;
         margin-bottom: 10px;
       }
 
@@ -1017,8 +1026,8 @@ main {
         font-weight: 400;
         font-size: 14px;
         line-height: 157%;
-        color: #727272;
-        font-family: 'cera_proregular', serif;
+        color: $secondary-text-color;
+        font-family: $font-family-cera_proregular;
       }
 
       img {
@@ -1056,13 +1065,13 @@ main {
 
       button {
         min-width: 85px;
-        background-color: #46A358;
+        background-color: $primary_green-color;
         border-radius: 0 4px 4px 0;
         font-weight: 700;
         font-size: 18px;
         line-height: 89%;
         color: #fff;
-        font-family: 'cera_proregular', serif;
+        font-family: $font-family-cera_proregular;
         padding: 12px 25px;
         border: none;
         cursor: pointer;
@@ -1077,8 +1086,8 @@ main {
         font-weight: 400;
         font-size: 13px;
         line-height: 169%;
-        color: #727272;
-        font-family: 'cera_proregular', serif;
+        color: $secondary-text-color;
+        font-family: $font-family-cera_proregular;
       }
 
       form {
@@ -1096,8 +1105,8 @@ main {
         font-weight: 700;
         font-size: 18px;
         line-height: 89%;
-        color: #3d3d3d;
-        font-family: 'cera_proregular', serif;
+        color: $text-color;
+        font-family: $font-family-cera_proregular;
         margin-bottom: 18px;
       }
     }
@@ -1124,8 +1133,8 @@ main {
       font-weight: 400;
       font-size: 14px;
       line-height: 157%;
-      color: #3d3d3d;
-      font-family: 'cera_proregular', serif;
+      color: $text-color;
+      font-family: $font-family-cera_proregular;
     }
   }
 }
@@ -1145,8 +1154,8 @@ main {
     font-weight: 700;
     font-size: 18px;
     line-height: 89%;
-    color: #3d3d3d;
-    font-family: 'cera_proregular', serif;
+    color: $text-color;
+    font-family: $font-family-cera_proregular;
     padding-bottom: 8px;
   }
 
@@ -1158,7 +1167,7 @@ main {
 
       &:hover a {
         color: green;
-        font-family: 'cera_probold', serif;
+        font-family: $font-family-cera_probold;
       }
 
       a {
@@ -1166,8 +1175,8 @@ main {
         font-weight: 400;
         font-size: 14px;
         line-height: 214%;
-        color: #3d3d3d;
-        font-family: 'cera_proregular', serif;
+        color: $text-color;
+        font-family: $font-family-cera_proregular;
       }
     }
   }
@@ -1181,8 +1190,8 @@ main {
       font-weight: 700;
       font-size: 18px;
       line-height: 89%;
-      color: #3d3d3d;
-      font-family: 'cera_proregular', serif;
+      color: $text-color;
+      font-family: $font-family-cera_proregular;
       padding-bottom: 13px;
       padding-top: 18px;
     }
@@ -1204,8 +1213,8 @@ main {
   font-weight: 400;
   font-size: 14px;
   line-height: 214%;
-  color: #3d3d3d;
-  font-family: 'cera_proregular', serif;
+  color: $text-color;
+  font-family: $font-family-cera_proregular;
   text-align: center;
 }
 
