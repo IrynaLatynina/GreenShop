@@ -80,7 +80,6 @@ main .main_products_container {
   max-width: 1200px;
   margin: auto;
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
   padding-top: 30px;
@@ -407,8 +406,7 @@ main .main_products_container {
 main .main_hot_products_container {
   max-width: 1200px;
   margin: auto;
-  display: flex;
-  flex-wrap: wrap; }
+  display: flex; }
   main .main_hot_products_container .hot_product_1, main .main_hot_products_container .hot_product_2 {
     width: 100%;
     position: relative;
@@ -494,7 +492,6 @@ main .text_container {
     max-width: 1200px;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center; }
     main .text_container .container_for_productItems2 .product_items2 {

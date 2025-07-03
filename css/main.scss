@@ -126,7 +126,6 @@ main {
     max-width: 1200px;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
     padding-top: 30px;
@@ -585,7 +584,7 @@ main {
     max-width: 1200px;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
+
 
     .hot_product_1, .hot_product_2 {
       width: 100%;
@@ -695,7 +694,6 @@ main {
       max-width: 1200px;
       margin: auto;
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
 
